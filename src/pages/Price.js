@@ -4,7 +4,7 @@ export default function Price() {
   const [coin, setCoin] = useState(null)
   const params = useParams()
   const { symbol } = params
-  const url = `http://rest.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${process.env.REACT_APP_CRYPTO_API_KEY}`
+  const url = `https://rest.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${process.env.REACT_APP_CRYPTO_API_KEY}`
 
   const getCoin = async () => {
     try {
